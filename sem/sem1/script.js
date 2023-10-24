@@ -58,3 +58,5 @@ console.log(+i);
 const j = "hello";
 const k = "world";
 console.log(`${j} ${k}`);
+
+console.log(object);
