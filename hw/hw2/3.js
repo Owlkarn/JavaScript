@@ -14,10 +14,10 @@
 число 32.
 */
 
-// const dayNumber = Number(prompt("Введите число от 1 до 31"));
-//
-// if (dayNumber > 0 && dayNumber < 32) {
-//     const dec = (dayNumber % 10 == 0) ? Math.floor(dayNumber / 10) : Math.floor(dayNumber / 10 + 1);
-//     console.log(`Число ${dayNumber} попадает в ${dec} декаду месяца.`);
-// } else
-//     console.log("Неверное значение");
+const dayNumber = Number(prompt("Введите число от 1 до 31"));
+
+if (dayNumber > 0 && dayNumber < 32) {
+    const dec = (dayNumber % 10 == 0) ? Math.floor(dayNumber / 10) : Math.floor(dayNumber / 10 + 1);
+    console.log(`Число ${dayNumber} попадает в ${dec} декаду месяца.`);
+} else
+    console.log("Неверное значение");
