@@ -17,3 +17,7 @@ const positive = Number(prompt("Введите положительное чис
 const negative = Number(prompt("Введите отрицательное число"));
 
 alert((positive > 0 || negative < 0) ? "Все значения верные." : "Одно или более значений некорректно.");
+
+// const  = () => {  (arf)
+//
+// }
