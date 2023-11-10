@@ -18,12 +18,18 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-const sum = (numA, numB) => Number(numA) + Number(numB);
+/**
+ *
+ * @param {number} numA
+ * @param {number} numB
+ * @returns {number}
+ */
+const sum = (numA, numB) => numA + numB;
 const mult = (numA, numB) => numA * numB;
 const div = (numA, numB) => numA / numB;
-const dif = (numA, numB) => Math.max(numA, numB) - Math.min(numA, numB);
+const dif = (numA, numB) => Math.abs(numA - numB);
 const arrayNum = prompt("Введите два числа через пробел").split(" ");
 
-console.log(`Сумма: ${sum(arrayNum[0], arrayNum[1])}  Вычитание: ${dif(arrayNum[0], arrayNum[1])} 
+console.log(`Сумма: ${sum(Number(arrayNum[0]), Number(arrayNum[1]))}  Вычитание: ${dif(arrayNum[0], arrayNum[1])} 
 Умножение: ${mult(arrayNum[0], arrayNum[1])} Деление: ${div(arrayNum[0], arrayNum[1])}`)
 
