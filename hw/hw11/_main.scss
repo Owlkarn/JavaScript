@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    background: #f1e4e6;
+    margin-bottom: 65px;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+    position: relative;
+
+    &_left {
+        width: 50%;
+    }
+    &_right {
+        display: flex;
+        padding-left: 4%;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 363px;
+    }
+    &_title_full {
+        border-left: 12px solid $pinkTextColour;
+        padding-left: 16px;
+    }
+    &_title {
+        color: #222;
+        font-size: 32px;
+        font-weight: 700;
+        &_part1 {
+            font-size: 48px;
+            font-weight: 900;
+        }
+        &_part3 {
+            color: $pinkTextColour;
+        }
+    }
+    &_second_row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

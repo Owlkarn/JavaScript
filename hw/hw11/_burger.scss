@@ -1,0 +1,63 @@
+.burger {
+    &_label:hover path {
+        fill: $pinkTextColour;
+    }
+    &_nav {
+        background: #fff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        max-width: $widthBurgerMenu;
+        width: 100%;
+        padding: 32px;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        transition: right 0.3s;
+        &_heading {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+        &_box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 24px;
+        }
+        &_title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $pinkTextColour;
+        }
+        &_list {
+            list-style-type: none;
+            padding-left: 21px;
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            margin-top: 12px;
+        }
+        &_link {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6f6e6e;
+            &:hover {
+                color: $pinkTextColour;
+            }
+        }
+    }
+}
+
+#burger {
+    position: absolute;
+    left: -999999999px;
+    visibility: hidden;
+    &:checked ~ .burger_nav {
+        right: -$widthBurgerMenu;
+    }
+}

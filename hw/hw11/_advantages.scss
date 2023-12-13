@@ -1,0 +1,33 @@
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    background: #222224;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 341px;
+    padding-top: 6.44%;
+    padding-bottom: 6.44%;
+    &_item {
+        @include flexColumnCenter();
+        text-align: center;
+    }
+    &_img {
+        margin-bottom: 28px;
+    }
+    &_title {
+        color: #fbfbfb;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    &_dsc {
+        color: #fbfbfb;
+        text-align: center;
+        font-family: Lato;
+        font-size: 13.972px;
+        font-weight: 300;
+        max-width: 360px;
+        padding: 0 7%;
+    }
+}

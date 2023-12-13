@@ -1,0 +1,43 @@
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 31.6%);
+    gap: 2.6%;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.category {
+    position: relative;
+    background: rgba(33, 22, 22, 0.7);
+    &_link {
+        display: flex;
+    }
+    &_img {
+        z-index: -1;
+    }
+    &_text {
+        top: 0;
+        left: 0;
+        @include flexColumnCenter();
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    &_subtitle {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &_title {
+        color: $pinkTextColour;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.accesories {
+    grid-column: 1 / span 3;
+}
