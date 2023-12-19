@@ -189,6 +189,9 @@
                     extensive models.</p>
             </article>
         </section>
+        <section class="main-cart center">
+            <h1 class="main-cart__title">Cart Items</h1>
+        </section>
         <section class="subscribe center">
             <div class="subscribe_left subscribe_part">
                 <img src="img/subscr_img.png" alt="subscribe img" class="subscribe_left_img">
@@ -295,6 +298,28 @@
             <h3 class="items_showcase_item_price"></h3>
         </div>
         </div>
+    </template>
+    <template id="cart_sample">
+        <article class="cart_left_items">
+            <div class="cart_left_items_item">
+                <img class="cart_left_items_item_del" src="img/del_item.svg" alt="del">
+                <img class="cart_left_items_item_img" src="" alt="">
+                <article class="cart_left_items_item_desc">
+                    <h2 class="cart_left_items_item_desc_name"></h2>
+                    <article class="cart_left_items_item_desc_features">
+                        <p class="item_feature">Price: <span class="cart_left_items_item_desc_price"></span>
+                        </p>
+                        <p class="item_feature">Color: Red</p>
+                        <p class="item_feature">Size: Xl</p>
+                        <div class="cart_left_items_item_desc_quantity">
+                            <p class="item_feature">Quantity:</p>
+                            <input type="number" class="cart_left_items_item_desc_input" min="1">
+                        </div>
+                    </article>
+                </article>
+
+            </div>
+        </article>
     </template>
     <script src="data.js"></script>
     <script src="script.js"></script>

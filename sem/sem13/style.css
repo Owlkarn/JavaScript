@@ -1,0 +1,29 @@
+.btnPan {
+    height: 300px;
+    width: 500px;
+    background-color: blueviolet;
+}
+
+.btnPlay {
+    width: 100px;
+    height: 100px;
+    background-image: url("assets/play-solid.svg");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.btnPause {
+    width: 100px;
+    height: 100px;
+    background-image: url("assets/pause-solid.svg");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.videoBox {
+    width: 500px;
+}
