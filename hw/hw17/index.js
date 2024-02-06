@@ -146,7 +146,7 @@ function addComment(){
         inputEl.value = '';
     }
     catch (e){
-        console.log(e);
+        alert(e);
     }
 }
 
