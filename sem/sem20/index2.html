@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Title</title>
+</head>
+<body>
+<h1>Создайте свой мебельный гарнитур</h1>
+<div class="furniture-option">
+    <h2>Стол</h2>
+    <label>
+        Цвет:
+        <select id="table-color">
+            <option value="brown">Коричневый</option>
+            <option value="white">Белый</option>
+        </select>
+    </label>
+</div>
+<div class="furniture-option">
+    <h2>Стул</h2>
+    <label>
+        Материал:
+        <select id="chair-material">
+            <option value="wood">Дерево</option>
+            <option value="metal">Металл</option>
+        </select>
+    </label>
+</div>
+<button id="save-btn">Сохранить комплект</button>
+<button id="load-btn">Загрузить последний комплект</button>
+<button id="clear-btn">Очистить настройки</button>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="./index2.js"></script>
+</body>
+</html>
