@@ -143,6 +143,7 @@ lessonsData.forEach(lesson => {
                 <button class="btnRemove">Отменить запись</button>
             </div>
     `)
+
     const currentLesson = document.querySelector(`.lessonName[data-id='${lesson.id}']`)
     const btnAddEl = currentLesson.querySelector('.btnAdd');
     const btnRemoveEl = currentLesson.querySelector('.btnRemove');
@@ -160,7 +161,6 @@ lessonsData.forEach(lesson => {
         btnAddEl.disabled = true;
         btnRemoveEl.disabled = false;
     } else btnRemoveEl.disabled = true;
-
 });
 
 listLessonsEl.addEventListener('click', ({target})=> {
@@ -181,7 +181,7 @@ listLessonsEl.addEventListener('click', ({target})=> {
             newData.currentParticipants = currentNumberEl.textContent;
             saveData(localStorageKey, lessonsData);
 
-            usersData.push(newData.name);
+            usersData.push(newData.id);
             saveData(userLessonsLocalStorageKey, usersData);
         }
     } else if (target.matches(".btnRemove")) {
@@ -190,7 +190,7 @@ listLessonsEl.addEventListener('click', ({target})=> {
         const btnAddEl = fatherEl.querySelector(".btnAdd");
         let current = parseInt(currentNumberEl.textContent);
 
-        if (!isNaN(current)) {
+
             currentNumberEl.textContent = current - 1;
             target.disabled = true;
             btnAddEl.disabled = false;
@@ -201,8 +201,7 @@ listLessonsEl.addEventListener('click', ({target})=> {
             newData.currentParticipants = currentNumberEl.textContent;
             saveData(localStorageKey, lessonsData);
 
-            usersData.splice(usersData.indexOf(newData.name), 1);
+            usersData.splice(usersData.indexOf(newData.id), 1);
             saveData(userLessonsLocalStorageKey, usersData);
-        }
     }
 })
