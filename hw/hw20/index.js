@@ -56,14 +56,11 @@ nextBtnEl.addEventListener('click', () => {
 });
 
 navEl.addEventListener('click', ({target}) => {
-    dotEls.forEach((el) => {
-        el.classList.remove('active');
-    })
     if (target.matches('.dot')) {
         const dotIndex = parseInt(target.getAttribute('data-slide-index'));
         slideIndex = dotIndex;
-        imgStylesUpdate(dotIndex);
-        target.classList.add('active');
+        imgStylesUpdate(slideIndex);
+        activeDot(slideIndex);
     }
 
 })

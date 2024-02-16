@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <style>
+        .likes {
+            display: flex;
+        }
+        .like {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            background-image: url('./img/unlike.svg');
+        }
+        .like.clicked {
+            background-image: url('./img/like.svg');
+        }
+        .like-count {
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+<img class = 'random-img' src="" alt="">
+<p class="author"></p>
+<div class="likes">
+    <div class="like"></div>
+    <div class="like-count"></div>
+</div>
+<div class="history">History</div>
+<div class="history-box"></div>
+
+<script src="index.js" type="module"></script>
+</body>
+
+</html>
