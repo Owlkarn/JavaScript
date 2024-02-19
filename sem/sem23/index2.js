@@ -33,12 +33,10 @@
 //
 // 6. Реализуйте бесконечную подгрузку фотографий при прокручивании страницы.
 
-//VmQroNPOwLBp0FOJRcwGijMFtcNGVhonIRausP0eJAU
-
 const getNumPage = counter();
 let isFetching = false;
 const photoContentEl = document.getElementById("photo-container");
-const client_id = `VmQroNPOwLBp0FOJRcwGijMFtcNGVhonIRausP0eJAU`; //Здесь ваш ключ
+const client_id = `здесь ваш ключ`; //Здесь ваш ключ
 
 try {
     const fotoData = await getImagesFetch(getNumPage());

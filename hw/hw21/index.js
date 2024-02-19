@@ -41,7 +41,7 @@ const historyBoxEl = document.querySelector('.history-box');
 let history = [];
 let isFetching = false;
 let isRandom = true;
-const client_id = `VmQroNPOwLBp0FOJRcwGijMFtcNGVhonIRausP0eJAU`;
+const client_id = `здесь ваш ключ`;
 
 if (localStorage.getItem('history'))
     history = JSON.parse(localStorage.getItem('history'));
